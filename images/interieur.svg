@@ -1,0 +1,30 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder intérieur DS7</title>
+  <desc id="desc">Illustration douce de l'intérieur confortable de la DS7.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#0f1c2b" offset="0%"/>
+      <stop stop-color="#162c44" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="seat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#f6f7fb" offset="0%"/>
+      <stop stop-color="#e1e6ed" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="140" fill="#d9b86d" opacity="0.18"/>
+  <rect x="140" y="160" width="920" height="500" rx="40" fill="#101a29" stroke="#1f2e3f" stroke-width="6"/>
+  <rect x="190" y="210" width="820" height="200" rx="26" fill="#0c1522" stroke="#1f2e3f" stroke-width="4"/>
+  <rect x="220" y="230" width="220" height="160" rx="18" fill="url(#seat)" stroke="#d9dee4" stroke-width="5"/>
+  <rect x="460" y="230" width="220" height="160" rx="18" fill="url(#seat)" stroke="#d9dee4" stroke-width="5"/>
+  <rect x="700" y="230" width="220" height="160" rx="18" fill="url(#seat)" stroke="#d9dee4" stroke-width="5"/>
+  <rect x="260" y="450" width="280" height="160" rx="24" fill="#131f30" stroke="#24374d" stroke-width="5"/>
+  <rect x="620" y="450" width="320" height="160" rx="24" fill="#131f30" stroke="#24374d" stroke-width="5"/>
+  <rect x="320" y="470" width="180" height="80" rx="18" fill="#f6f7fb"/>
+  <rect x="700" y="470" width="180" height="80" rx="18" fill="#f6f7fb"/>
+  <rect x="270" y="630" width="280" height="22" rx="11" fill="#d9b86d" opacity="0.7"/>
+  <rect x="640" y="630" width="260" height="22" rx="11" fill="#d9b86d" opacity="0.7"/>
+  <text x="180" y="120" fill="#f4f6f9" font-family="Manrope, Arial, sans-serif" font-size="42" font-weight="700">Intérieur DS7 blanche</text>
+  <text x="180" y="165" fill="#c8d0dc" font-family="Manrope, Arial, sans-serif" font-size="24">Assises confortables, ambiance douce</text>
+  <text x="180" y="730" fill="#c8d0dc" font-family="Manrope, Arial, sans-serif" font-size="20">Placeholder visuel - remplacez par vos photos réelles</text>
+</svg>
