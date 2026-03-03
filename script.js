@@ -1,5 +1,7 @@
 const bookingForm = document.getElementById('booking-form');
 const whatsappNumber = '33630913932';
+const navToggle = document.querySelector('.menu-toggle');
+const navLinks = document.getElementById('primary-nav');
 
 const dateField = bookingForm?.querySelector('input[name="date"]');
 if (dateField) {
@@ -37,4 +39,25 @@ bookingForm?.addEventListener('submit', (event) => {
   const text = encodeURIComponent(buildMessage(formData));
   const url = `https://wa.me/${whatsappNumber}?text=${text}`;
   window.open(url, '_blank', 'noopener,noreferrer');
+});
+
+const closeNav = () => {
+  navToggle?.setAttribute('aria-expanded', 'false');
+  navLinks?.classList.remove('open');
+};
+
+navToggle?.addEventListener('click', () => {
+  const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', String(!expanded));
+  navLinks?.classList.toggle('open', !expanded);
+});
+
+navLinks?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', closeNav);
+});
+
+window.matchMedia('(min-width: 768px)').addEventListener('change', (event) => {
+  if (event.matches) {
+    closeNav();
+  }
 });
