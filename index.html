@@ -19,7 +19,11 @@
         <p class="brand-tagline">Douceur &amp; Sérénité en DS7 blanche</p>
       </div>
     </div>
-    <nav aria-label="Navigation principale">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+      <span class="menu-lines" aria-hidden="true"></span>
+      <span class="menu-label">Menu</span>
+    </button>
+    <nav id="primary-nav" class="nav-links" aria-label="Navigation principale">
       <a href="#services">Services</a>
       <a href="#galerie">Galerie</a>
       <a class="nav-call" href="tel:+33630913932">Appeler</a>
@@ -42,16 +46,22 @@
           <span>Trajets médicaux ou personnels</span>
         </div>
       </div>
-      <div class="hero-card">
-        <p class="card-title">Prêt à partir</p>
-        <ul>
-          <li>Arrivée soignée et discrète</li>
-          <li>DS7 blanche climatisée</li>
-          <li>Aide aux bagages si besoin</li>
-        </ul>
-        <div class="mini-cta">
-          <p>Besoin d'un trajet ?</p>
-          <a class="btn small" href="tel:+33630913932">Appeler maintenant</a>
+      <div class="hero-side">
+        <picture class="hero-visual">
+          <source srcset="images/exterieur-320.png 320w, images/exterieur-640.png 640w, images/exterieur-750.png 750w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 420px">
+          <img src="images/exterieur-640.png" alt="Vue extérieure de la DS7 blanche prête à partir" width="640" height="418" fetchpriority="high">
+        </picture>
+        <div class="hero-card">
+          <p class="card-title">Prêt à partir</p>
+          <ul>
+            <li>Arrivée soignée et discrète</li>
+            <li>DS7 blanche climatisée</li>
+            <li>Aide aux bagages si besoin</li>
+          </ul>
+          <div class="mini-cta">
+            <p>Besoin d'un trajet ?</p>
+            <a class="btn small" href="tel:+33630913932">Appeler maintenant</a>
+          </div>
         </div>
       </div>
     </section>
@@ -105,15 +115,24 @@
       </div>
       <div class="gallery-grid">
         <figure>
-          <img src="images/exterieur.png" alt="Vue extérieure de la DS7 blanche">
+          <picture>
+            <source srcset="images/exterieur-320.png 320w, images/exterieur-640.png 640w, images/exterieur-750.png 750w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 360px">
+            <img src="images/exterieur-640.png" alt="Vue extérieure de la DS7 blanche" loading="lazy" decoding="async" width="640" height="418">
+          </picture>
           <figcaption>Extérieur élégant</figcaption>
         </figure>
         <figure>
-          <img src="images/interieur.png" alt="Intérieur du véhicule confortable">
+          <picture>
+            <source srcset="images/interieur-320.png 320w, images/interieur-640.png 640w, images/interieur-840.png 840w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 360px">
+            <img src="images/interieur-640.png" alt="Intérieur du véhicule confortable" loading="lazy" decoding="async" width="640" height="300">
+          </picture>
           <figcaption>Intérieur confortable</figcaption>
         </figure>
         <figure>
-          <img src="images/interieur2.png" alt="Détails supplémentaires de l'intérieur du véhicule">
+          <picture>
+            <source srcset="images/interieur2-320.png 320w, images/interieur2-640.png 640w, images/interieur2-960.png 960w, images/interieur2-1080.png 1080w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 360px">
+            <img src="images/interieur2-640.png" alt="Détails supplémentaires de l'intérieur du véhicule" loading="lazy" decoding="async" width="640" height="640">
+          </picture>
           <figcaption>Détails de l'intérieur</figcaption>
         </figure>
       </div>
@@ -185,6 +204,6 @@
     <p><a href="tel:+33630913932">06 30 91 39 32</a> • <a href="#reservation">Réserver</a></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
