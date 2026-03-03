@@ -1,0 +1,20 @@
+{
+  "name": "taxi-dages-sylvain-ds7",
+  "version": "1.0.0",
+  "description": "Site vitrine statique pour TAXI DAGES SYLVAIN (DS7).",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No automated tests. Run manual checks in the browser.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EyodgS/TAXI-DAGES-SYLVAIN-DS7.git"
+  },
+  "keywords": [],
+  "author": "TAXI DAGES SYLVAIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EyodgS/TAXI-DAGES-SYLVAIN-DS7/issues"
+  },
+  "homepage": "https://github.com/EyodgS/TAXI-DAGES-SYLVAIN-DS7#readme"
+}
